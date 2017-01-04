@@ -10,8 +10,6 @@ namespace CrashingCourse
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, world");
-            Console.Read();
             string admin_username = "jcraig4803";
             string admin_password = "12345";
             string admin_log = "";
