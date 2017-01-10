@@ -19,13 +19,26 @@ namespace CrashingCourse
             string user_phonenumber = "";
 
             string pick_number = "";
-            int winning_num = 2;
-            int input_num;
-
-            Console.WriteLine("Pick a Number 1 Throught 3");
+            const int winning_num = 2;
+            const int winning_num2 = 4;
+            string user_data = Console.ReadLine();
+            int user_value;
+            Console.WriteLine("Pick a Number 1 Throught 5");
             pick_number = Console.ReadLine();
-            int.TryParse(pick_number, out input_num);
-            if (input_num == winning_num)
+            int.TryParse(pick_number, out user_value);
+            switch (user_value) {
+                case winning_num:
+                    Console.WriteLine("Fizz");
+                    break;
+                case winning_num2:
+                    Console.WriteLine("Buzz");
+                    break;
+                default:
+                    Console.WriteLine("Fail");
+                    break;
+
+            }
+            Console.Read();
             {
 
                 Console.WriteLine("Input Admin username");
@@ -48,15 +61,16 @@ namespace CrashingCourse
 
                     Console.ReadLine();
                 }
-                else
-                {
+               
+                
+                
+            
+            else {
+                    Console.WriteLine("You Lose");
                     Console.ReadLine();
                 }
-            }
-            else {
-                Console.WriteLine("You Lose");
-                Console.ReadLine();
             }
         }
     }
 }
+
